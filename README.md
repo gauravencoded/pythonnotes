@@ -1,16 +1,16 @@
 # pythonnotes
-Essential things for python, data science \n
-Directory List \n
-1] Data --> dummy data \n
-2] notes --> notes and cheatsheets \n
+Essential things for python, data science 
+Directory List 
+1] Data --> dummy data 
+2] notes --> notes and cheatsheets 
 
-File List \n
-1] bs_scraper --> web scraping using beautifule soup \n
-2] Selenium_scrpaer --> web scraping using selenium \n 
-3] ds_py --> opertions with python internal ds \n 
-4] dates_py --> operation with python dates \n 
-5] strings_py --> operations on strings \n
-6] numpy_py \n
-7] pandas_py \n
+File List 
+1] bs_scraper --> web scraping using beautifule soup 
+2] Selenium_scrpaer --> web scraping using selenium  
+3] ds_py --> opertions with python internal ds 
+4] dates_py --> operation with python dates 
+5] strings_py --> operations on strings 
+6] numpy_py 
+7] pandas_py 
 8] matplotlib_py --> 
 
