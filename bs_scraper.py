@@ -127,6 +127,6 @@ if inning2:
         second_inning_bowl['economy']=child[6].contents[i].contents[15].string#eco
         second_inning_bowl_result.append(second_inning_bowl)
         i=i+2
-    print(second_inning_bowl_result)
+    print(json.dumps(second_inning_bowl_result))
 else:
     print("No data for second inning");
