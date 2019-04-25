@@ -1,0 +1,11 @@
+#A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+thistuple = ("apple", "banana", "cherry")
+print('Accessing item from tuple : ' + thistuple[2])
+print ('Check if item exist in tuple'+ 'apple' in thistuple)
+print ('Length of the tuple : '+ str(len(thistuple)))
+print('You can not add item to tuple')
+print ('You can not remove item from tuple')
+print ('Del can delete entire tuple completely')
+print ('Constructing a tuple using its constructor : ' + str(tuple(('man' , 'animal' , 'insect'))))
+print ('Counting the number of occurence of an item in the tuple : ' + str(thistuple.count('apple')))
+print ('Find the index of an item in the tuple : ' + str(thistuple.index('apple')) )

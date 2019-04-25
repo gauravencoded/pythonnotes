@@ -1,2 +1,10 @@
-# sister='lizzy'
-# print (sister.capitalize())
+test_str='this is a test string'
+print ('printing nth character : ' +  test_str[3])
+print ('Printing a series of charachters : ' + test_str[1:5])
+print ('Capitalise : ' + test_str.capitalize())
+print ('stripng a string of whitespace from start and end : ' + ' hi '.strip() + 'myname')
+print ('length of the string : ' + str(len('this is a string')))
+print ('turn string to owercase : ' + 'I am Going to All'.lower())
+print('Turn strin gto uppercase' + 'this is a lower case'.upper())
+print ('replacing in strings : ' + 'hello'.replace('h', 'j'))
+print('Splitting string to array : ' + str("Hello World now".split(' ')))
