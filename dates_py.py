@@ -1,75 +1,74 @@
-#time is linear
-# datetime also check validity of date to exist
+import datetime as dt
+import time
+# time is linear
 # https://docs.python.org/2/library/datetime.html
 
-import datetime as dt
+#there are two kinds of date and time naive and aware
+# An aware object has sufficient knowledge of applicable algorithmic and political time adjustments, 
+# such as time zone and daylight saving time information, to locate itself relative to other aware objects. 
+# An aware object is used to represent a specific moment in time that is not open to interpretation
+# A naive object does not contain enough information to unambiguously locate itself relative to other date/time objects. 
+# Whether a naive object represents Coordinated Universal Time (UTC), local time, or time in some other timezone is purely 
+# up tot the program, just like its up to the program whether a particular mumber represent meters, miles or mass
+# Naive objects are easy to understand and to work with, at the cost of ignoring some aspects of reality.
 
-x=dt.datetime.now()
-print x
-print x.year
-print x.strftime("%A")
+# datetime also check validity of date to exist
 
-y=dt.datetime.today()
-print y
-
-#creating gnew date object
-x= dt.datetime(2018, 6, 1)
-print x.strftime("%B")
-
-
-
-d1="10/12/2017"
-d2="9/11/2018"
-print max(d1,d2)
-
-# print d2 - d1 -- doesnt work cause both are string
-dd=dt.datetime("10/12/2017")
-ddd=dt.datetime("9/11/2018")
-
-print ddd - dd
+#datetime module has followig constants
+print '--------------- Current date -------------------'
+print 'Now : ' + str(dt.datetime.now())
+print 'Now from time : ' + str(dt.date.fromtimestamp(time.time()))
+print 'current day : ' + str(dt.datetime.now().day)
+print 'current month : ' + str(dt.datetime.now().month)
+print 'current year : ' + str(dt.datetime.now().year)
+print 'current local date : ' + str(dt.date.today())
 
 
+#print dt.fromtimestamp(dt.time.time())
+print '-------------- Date time constant --------------------'
 
+print 'Date time object constants'
+print 'Max year : ' + str(dt.MAXYEAR)
+print 'Min year : ' + str(dt.MINYEAR)
 
-#.total_seconds()
-#.days()
-#.time() to extracts time from a date
-#.timedelta() used ot calculate new data and time from a given date, cant use timedelta on time object as we may not know if days have passed
+print '--------------- constructing date from value -------------------'
+print dt.datetime(2020, 5, 17)
 
+print '--------------extracting/formatting values from date--------------------'
+dd=dt.datetime(2020, 11, 17, 11, 53)
+print 'date : ' + str(dd)
+print  'day : ' + str(dd.day)
+print 'month : ' + str(dd.month)
+print 'year : ' + str(dd.year)
 
+print 'weekday : '+ str(dd.strftime("%A"))
+print 'weekday : '+ str(dd.strftime("%a"))
+print 'weekday : ' + str(dd.strftime("%w"))
+print 'Day of month : ' + str(dd.strftime("%d"))
+print 'Month : ' + str(dd.strftime("%B"))
+print 'Month : ' + str(dd.strftime("%b"))
+print 'Month : ' + str(dd.strftime("%m"))
+print 'Year : ' + str(dd.strftime("%y"))
+print 'Year : ' + str(dd.strftime("%Y"))
+print 'Hour : ' + str(dd.strftime("%H"))
+print 'Hour : ' + str(dd.strftime("%I"))
+print 'AM/PM : ' + str(dd.strftime("%p"))
 
+print 'Minute : ' + str(dd.strftime("%M"))
+print 'Second : ' + str(dd.strftime("%S"))
+print 'Microsecond : ' + str(dd.strftime("%f"))
+print 'UTC offset : ' + str(dd.strftime("%z"))
+print 'Timezone : ' + str(dd.strftime("%Z"))
+print 'Day number of year 001-366 : ' + str(dd.strftime("%j"))
+print 'Week number of year, Sunday as the first day of week : ' + str(dd.strftime("%U"))
+print 'Week number of year, Monday as the first day of week : ' + str(dd.strftime("%W"))
+print 'Local version of datetime : ' + str(dd.strftime("%c"))
+print 'Local version of time : ' + str(dd.strftime("%X"))
+print 'Local version of date : ' + str(dd.strftime("%x"))
+print 'A percent character : ' + str(dd.strftime("%%"))
 
+print '-------------- time delta --------------------'
 
-
-
-# Directive	Description	Example	
-# %a	Weekday, short version	Wed	
-# %A	Weekday, full version	Wednesday	
-# %w	Weekday as a number 0-6, 0 is Sunday	3	
-# %d	Day of month 01-31	31	
-# %b	Month name, short version	Dec	
-# %B	Month name, full version	December	
-# %m	Month as a number 01-12	12	
-# %y	Year, short version, without century	18	
-# %Y	Year, full version	2018	
-# %H	Hour 00-23	17	
-# %I	Hour 00-12	05	
-# %p	AM/PM	PM	
-# %M	Minute 00-59	41	
-# %S	Second 00-59	08	
-# %f	Microsecond 000000-999999	548513	
-# %z	UTC offset	+0100	
-# %Z	Timezone	CST	
-# %j	Day number of year 001-366	365	
-# %U	Week number of year, Sunday as the first day of week, 00-53	52	
-# %W	Week number of year, Monday as the first day of week, 00-53	52	
-# %c	Local version of date and time	Mon Dec 31 17:41:00 2018	
-# %x	Local version of date	12/31/18	
-# %X	Local version of time	17:41:00	
-# %%	A % character
-
-
-
-#bucketing time
-#-------------------
-
+d1=dt.datetime(2020, 5, 17 , 11, 53)
+d2=dt.datetime(2022, 11, 12 , 22, 23)
+print d2-d1

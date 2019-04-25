@@ -103,14 +103,6 @@ if inning2:
     print(fitness_performance)
     #catch, runout score calculation completed
 
-
-
-
-
-
-
-
-
     print("bowling second innning")
     #print(child[6])
     second_inning_bowl_result=[]
