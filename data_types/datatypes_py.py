@@ -36,3 +36,5 @@ orderBy(4,7,max)
 orderBy(4,7)
 
 #tuple is immutable
+print (round(1.657,1))
+print (round(1.678))

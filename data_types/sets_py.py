@@ -1,23 +1,7 @@
-# dictionary is just like js object
-# no duplicate keys
-
-dict_ministers= {'pm': 'Modi', 'hm':'Singh', 'dm':'Sitharaman' }
-
-print dict_ministers['pm']
-
-print dict_ministers['hrd']
-
-del(dict_ministers['pm'] )
-print  dict_ministers
-print dict_ministers.keys()
-print dict_ministers.values()
-print sorted(dict_ministers.keys())
-for key in dict_ministers:
-    print dict_ministers[key]
-
 
 #sets
-#unordered collection , no duplicate values, 
+print '------------------ Sets -------------------'
+# Set is a collection which is unordered and unindexed. No duplicate members.
 
 new_set={'modi', 'godi', 'lodi', 'bodi'}
 subset ={'modi', 'godi'}
@@ -33,5 +17,4 @@ print new_set > subset #superset
 print subset & not_subset #intersection
 print subset | not_subset #union
 print new_set - subset #set difference
-
 
