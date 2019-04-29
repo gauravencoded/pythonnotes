@@ -1,3 +1,9 @@
+
+
+
+
+
+
 #strings are ordered collection
 # '' "" are same in python'
 # x.find('substr') finds the substring

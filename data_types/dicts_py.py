@@ -1,6 +1,13 @@
+# Dictionary is a collection which is unordered.
+# INDEXED
+# MUTABLE
+# NO DUPLICATES
+# A mapping object maps hashable values to arbitrary objects. Mappings are mutable objects. There is currently only one standard mapping type, the dictionary
 
-print ('------------------ Dicts -------------------')
-#Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+
+
+
+
 dict_ministers= {'pm': 'Modi', 'hm':'Singh', 'dm':'Sitharaman' }
 print (dict_ministers['pm'])
 print (dict_ministers['hrd'])
